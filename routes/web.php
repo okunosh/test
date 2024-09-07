@@ -1,6 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+//use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController; //外部にあるPostControllerクラスを使えるように！
+
+Route::get('/posts', [PostController::class, 'index']);
 
 /*
 |--------------------------------------------------------------------------
